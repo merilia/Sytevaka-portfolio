@@ -15,8 +15,8 @@ $( document ).ready(function() {
   });
 });
 $(function() {
-	$("li.title").click(function() {
-		$(".opened").toggleClass(".closed");
+	$("a.title").click(function() {
+		$("li.title").toggleClass("closed");
 	});
 });
 });

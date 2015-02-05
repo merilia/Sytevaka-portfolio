@@ -65,9 +65,10 @@ li.title:after{
 	content:url("open.jpg");
 
 }
-after.closed{
-	
-}
+li.title.closed{
+	-ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 
 }
 li.title > .opened{
