@@ -8,14 +8,11 @@ margin:0;
 	max-width:70px;
 }
 .bio {
-	width:15%;
+	width:15.5%;
 	background: #fff;
 	text-align:center;
 	float:left;}
 
-.navigation{
-	padding-left:20px;
-}
 .navigation ul, a
 {list-style-type:none;
 	text-decoration: none;
@@ -115,7 +112,8 @@ body{
 .bio {
     width:100%;
     float:none;
-    text-align:justify;
+    text-align:center;
+    min-height:100px;
   }
 .photo img {float:left;
 padding-bottom:40px;
@@ -124,7 +122,8 @@ width:80%;}
 .navbar {text-align:center;
 padding-right:40px;
 width:50%;
-float:right;}
+float:right;
+margin:0 auto !important;}
 
 .sr-only  {float:right;
 }
@@ -162,3 +161,8 @@ float:right;}
   	position: relative;
   	top:10px;
   }
+@media all and (min-width: 1200px){
+	.navbar{
+		margin-left:7%;
+	}
+}
