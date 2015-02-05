@@ -58,8 +58,24 @@ display:inline-block;
 padding:3px;
 color: #939292;
 }
+li.title{
+	display:inline-block;
+}
+li.title:after{
+	content:url("open.jpg");
 
+}
+after.closed{
+	
+}
 
+}
+li.title > .opened{
+	color:red;
+}
+.navbar ul{
+	min-width:80%;
+}
 .navigation ul
 {list-style-type:none;
 text-transform: uppercase;
@@ -118,6 +134,9 @@ body{
   .photo img{
   	z-index: 9999;
   }
+  ul.toggle-menu{
+	display:none;
+}
   	.navbar{
 		width:100%;
 		position: relative;
@@ -160,6 +179,12 @@ margin:0 auto !important;}
 	-webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+ul.toggle-menu li{
+	padding:5px!important;
+}
+ul.toggle-menu{
+	display:none;
 }
 
   .nav > li { float:none; display:block; }
