@@ -22,7 +22,8 @@ text-transform: uppercase;
 font-size:10px;
 font-family: 'Open Sans', sans-serif;}
 #home a{color: #16B162;
-font-size:12px;}
+font-size:12px;
+display: inline-block;}
 
 .image-slider, .bx-viewport{
 	text-align:center;
@@ -77,10 +78,9 @@ font-size:12px;}
 	max-height:40px;
 	clear: both;
 	text-align: center;
-	width:84%;
-	float:right;
+	width:84%;;
 	position: absolute;
-	bottom:20px;
+	bottom:40px;
 	margin-left:14%;
 }
 .bx-wrapper .bx-controls-auto{
@@ -108,12 +108,24 @@ body{
 	overflow: auto;
 }
 
-@media all and (max-width: 699px)  {
+@media all and (max-width: 767px)  {
 .bio {
     width:100%;
     float:none;
     text-align:center;
     min-height:100px;
+  }
+  .photo img{
+  	z-index: 9999;
+  }
+  	.navbar{
+		width:100%;
+		position: relative;
+		top:-110px;
+
+	}
+  body{
+  	position: relative;
   }
 .photo img {float:left;
 padding-bottom:40px;
@@ -121,8 +133,6 @@ width:80%;}
 
 .navbar {text-align:center;
 padding-right:40px;
-width:50%;
-float:right;
 margin:0 auto !important;}
 
 .sr-only  {float:right;
@@ -138,8 +148,8 @@ margin:0 auto !important;}
 	text-align: center;
 	width:100%;
 	float:right;
-	position: relative;
-	bottom:70px;
+	position: absolute;
+	bottom:50px;
 	margin-left:0!important;
 	}
 
@@ -161,8 +171,8 @@ margin:0 auto !important;}
   	position: relative;
   	top:10px;
   }
-@media all and (min-width: 1200px){
-	.navbar{
-		margin-left:7%;
+	.navbar, .photo img{
+		position: relative;
+		display: inline-block;
+		text-align: center;
 	}
-}
